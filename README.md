@@ -1,7 +1,7 @@
 ***🐍PYDIR🐍***
                                                                                                                                                  
 Inspired in gobuster and dirbuster.                                                                            
-Writed in python🐍.                                                                             
+Writed in python.                                                                             
 Very simple.                                                                            
 A bit slow, in the future i will add threading.                                                                            
                                                                                                                                   
