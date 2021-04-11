@@ -1,6 +1,6 @@
 ***PYDIR***
                                                                                                                                                  
-Inspired in gobuster.                                                                            
+Inspired in gobuster and dirbuster.                                                                            
 Writed in python.                                                                            
 Very simple.                                                                            
 A bit slow, in the future i will add threading.                                                                            
