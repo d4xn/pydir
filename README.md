@@ -12,6 +12,4 @@ URL (the url address) > Example -> https:// www.web.com
 WORDLIST PATH (wordlist path) > Example -> dir1/dict.txt OR /home/user/Desktop/dict.txt                                                                             
 EXTENSION (without . | extension added at the end) > Example -> php OR txt                                                                            
 
-**THANKS FOR READING!**                                                                            
-
-***END***                                                                            
+***THANKS FOR READING!***                                                                                                                                                  
