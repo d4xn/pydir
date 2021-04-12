@@ -103,18 +103,22 @@ def main(url, wordlist, ext):
                     
                     else:
                         print(f'{help_message}Sintax Error!')
+                        return
                         
                 else:
                     pass
                     
             else:
-                    print(f'{help_message}Sintax Error!')
+                print(f'{help_message}Sintax Error!')
+                return
                 
         else:
             print(f'{help_message}Sintax Error!')
+            return
                 
     except:
         print(f'{help_message}Sintax Error!')
+        return
         
     if url != '' and wordlist != '':
         make_request(url, wordlist, ext)
