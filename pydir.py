@@ -27,9 +27,9 @@ ext = str(input('EXTENSION (without .) > '))
 # Functions
 
 '''
-This function make the requests and checks the status code of them,
-if the status code is equals to 200, 301 or 403,
-the program prints in the console the type of request, the full url and the status code
+This function make the requests and checks the status code of them
+If the status code is equals to 200, 301 or 403
+The program prints in the console the type of request, the full url and the status code
 '''
 
 def main():
@@ -46,7 +46,7 @@ def main():
                     if r_get.status_code == 200 or r_get.status_code == 301 or r_get.status_code == 403:
                         print(f'\nGET - {url}{d}.{ext} - {r_get.status_code}')
         
-                    elif r_post.status_code == 200 or r_post.status_code == 301 or r_post.status_code == 403:
+                    if r_post.status_code == 200 or r_post.status_code == 301 or r_post.status_code == 403:
                         print(f'\nPOST - {url}{dir}.{ext} - {r_post.status_code}')
             
                 elif url[-1] != '/':
@@ -55,7 +55,7 @@ def main():
                     if r_get.status_code == 200 or r_get.status_code == 301 or r_get.status_code == 403:
                         print(f'\nGET - {url}/{dir}.{ext} - {r_get.status_code}')
                 
-                    elif r_post.status_code == 200 or r_post.status_code == 301 or r_post.status_code == 403:
+                    if r_post.status_code == 200 or r_post.status_code == 301 or r_post.status_code == 403:
                         print(f'\nPOST - {url}/{dir}.{ext} - {r_post.status_code}')
             elif not ext:
                 if url[-1] == '/':
@@ -65,7 +65,7 @@ def main():
                     if r_get.status_code == 200 or r_get.status_code == 301 or r_get.status_code == 403:
                         print(f'\nGET - {url}{d} - {r_get.status_code}')
         
-                    elif r_post.status_code == 200 or r_post.status_code == 301 or r_post.status_code == 403:
+                    if r_post.status_code == 200 or r_post.status_code == 301 or r_post.status_code == 403:
                         print(f'\nPOST - {url}{dir} - {r_post.status_code}')
             
                 elif url[-1] != '/':
@@ -74,7 +74,7 @@ def main():
                     if r_get.status_code == 200 or r_get.status_code == 301 or r_get.status_code == 403:
                         print(f'\nGET - {url}/{dir} - {r_get.status_code}')
                 
-                    elif r_post.status_code == 200 or r_post.status_code == 301 or r_post.status_code == 403:
+                    if r_post.status_code == 200 or r_post.status_code == 301 or r_post.status_code == 403:
                         print(f'\nPOST - {url}/{dir} - {r_post.status_code}')         
 
 # End of the function
