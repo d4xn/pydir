@@ -28,7 +28,7 @@ ext = str(input('EXTENSION (without .) > '))
 
 '''
 This function make the requests and checks the status code of them,
-if the status code is equals to 200, 
+if the status code is equals to 200, 301 or 403,
 the program prints in the console the type of request, the full url and the status code
 '''
 
